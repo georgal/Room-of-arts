@@ -16,6 +16,19 @@
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="assets/js/howler.js"></script>
+	<script>
+	var sound = new Howl({
+      src: ['assets/sounds/water.mp3'],
+	  autoplay: true,
+	  loop: true
+    });
+	sound.play();
+	
+	$('#pause').click(function() {
+	sound.pause();	
+	});
+	</script>
 </head>
 
 <body>
@@ -23,7 +36,7 @@
     <div>
         <nav class="navbar navbar-default navigation-clean">
             <div class="container">
-                <div class="navbar-header"><a href="http://www.asklepeion.gr/en" target="_blank"><img src="assets/img/logo.png" /></a>
+                <div class="navbar-header"><a href="http://www.asklepeion.gr/en" target="_blank" ><img src="assets/img/logo.png" style="margin-top:5px; margin-left:5px;"/></a>
                     <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 </div>
                 <div class="collapse navbar-collapse" id="navcol-1">
@@ -59,7 +72,7 @@
 	<div class="slideshow">
 	   <div class="images"></div>
 	</div>
-	
+	<img src="/assets/img/slide/3.jpg">
         <div class="container" style"width:100px;">
                 <h2 class="text-center">The Water of Memory, the water of return</h2>
                 <blockquote class="text-center">Traditions from Greece and Middle East used to say<br> that when a beloved person is going to leave<br> we should throw water on his back<br> 
@@ -68,10 +81,10 @@
 					<div style="text-align:center;">
 					<!--autoplay-->
 					<audio id="bgaudio" autoplay="autoplay">
-						  <source src="assets/sounds/water.mp3" type="audio/mpeg">
+						  <source src="assets/sounds/" type="audio/mpeg">
 						</audio><br>
-						<a href="javascript:void" id="mute" class="speaker"><i class="fa fa-volume-up fa-2x"></i></a> &nbsp &nbsp
-						<a href="#noscroll" id="restart" class="speaker"><i class="fa fa-fast-backward fa-2x"></i></a>
+						<a href="#" id="play" class="stereo"><i class="fa fa-play fa-2x"></i></a> &nbsp &nbsp
+						<a href="#" id="pause" class="stereo"><i class="fa fa-pause fa-2x"></i></a>
 					</div>
 						<div class="subs">
 							<h4>
