@@ -1,15 +1,12 @@
-var audio = document.getElementById('bgaudio');
-	document.getElementById('mute').addEventListener('click', function (e)
-		{
-			e = e || window.event;
-			audio.muted = !audio.muted;
-			e.preventDefault();
-		}, false);
-							
-var audio = document.getElementById('bgaudio');
-	document.getElementById('restart').addEventListener('click', function (e)
-		{
-			e = e || window.event;
-			audio.currentTime = 0
-			e.preventDefault();
-		});	
+
+	$('#play').click(function() {
+		sound.play();
+	});
+	
+	$('#pause').click(function() {
+		sound.pause();
+	});
+		
+  $('#mute').click(function() {
+    $("i", this).toggleClass("fa fa-volume-off fa-2x fa fa-volume-up fa-2x");
+});
