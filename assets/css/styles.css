@@ -1,6 +1,6 @@
 .slideshow {
   height: 316px;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -9,8 +9,8 @@
 
 .slideshow > div {
   height: 316px;
-  width: 3827px;
-  background: url(http://www.asklepeion.gr/wp-content/uploads/2017/10/copy.jpg);
+  width: 16488px;
+  background: url(http://www.asklepeion.gr/wp-content/uploads/2017/10/3.jpg);
   position: absolute;
   margin-top: 20px;
   left: 0;
@@ -23,7 +23,7 @@
   opacity: 1;
   transition: opacity 0.5s ease-out;
   background-position: 0 -316px;
-  animation: moveSlideshow 30s linear infinite;
+  animation: moveSlideshow 90s linear infinite;
 }
 .slideshow:hover .images {
   opacity: 1;
