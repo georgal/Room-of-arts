@@ -10,7 +10,7 @@
 .slideshow > div {
   height: 316px;
   width: 14118px;
-  background: url(http://www.asklepeion.gr/wp-content/uploads/2017/10/slider.jpg);
+  background: url(https://github.com/georgal/Room-of-arts/blob/master/assets/img/slide/slider.jpg);
   position: absolute;
   margin-top: 20px;
   translateX: 0;
@@ -41,7 +41,7 @@
 .slideshow2 > div {
   height: 316px;
   width: 14298px;
-  background: url(http://www.asklepeion.gr/wp-content/uploads/2017/10/blue.jpg);
+  background: url(https://github.com/georgal/Room-of-arts/blob/master/assets/img/slide/blue.jpg);
   position: absolute;
   margin-top: 20px;
   translateX: 0;
