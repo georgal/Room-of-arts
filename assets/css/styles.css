@@ -29,6 +29,37 @@
   opacity: 1;
 }
 
+.slideshow2 {
+  height: 316px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.slideshow2 > div {
+  height: 316px;
+  width: 14298px;
+  background: url(http://www.asklepeion.gr/wp-content/uploads/2017/10/blue.jpg);
+  position: absolute;
+  margin-top: 20px;
+  translateX: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.5s ease-out;
+}
+
+.slideshow2 .images2 {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -316px;
+  animation: slideshow 90s linear infinite;
+}
+.slideshow2:hover .images2 {
+  opacity: 1;
+}
+
 .stereo{
 	margin-bottom:210px;
 }
