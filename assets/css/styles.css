@@ -71,6 +71,47 @@
     -webkit-transform: translateX(-66.6666%);  
   }
 }
+
+
+.carousel {
+  height: 314px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel > div {
+  height: 314px;
+  width: 5017px;
+  background: url(http://www.asklepeion.gr/wp-content/uploads/2017/10/women2.jpg);
+  position: absolute;
+  margin-top: 20px;
+  translateX: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.5s ease-out;
+}
+
+.carousel .women {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -316px;
+  animation: slideshow 60s linear infinite;
+}
+.carousel:hover .women {
+  opacity: 1;
+}
+
+@keyframes carousel {
+  100% { 
+    -webkit-transform: translateX(-66.6666%);  
+  }
+}
+
+
+
 .stereo{
 	margin-bottom:210px;
 }
