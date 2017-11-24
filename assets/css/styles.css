@@ -10,7 +10,7 @@
 .slide > div {
   height: 316px;
   width: 14106px;
-  background: url(http://www.asklepeion.gr/wp-content/uploads/2017/10/slider.jpg);
+  background: url(http://www.asklepeion.gr/wp-content/uploads/2017/11/slider.jpg);
   position: absolute;
   margin-top: 20px;
   translateX: 0;
@@ -110,6 +110,43 @@
   }
 }
 
+
+.slidart {
+  height: 276px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.slidart > div {
+  height: 276px;
+  width: 14225px;
+  background: url(http://www.asklepeion.gr/wp-content/uploads/2017/11/slidart.png);
+  position: absolute;
+  margin-top: 20px;
+  translateX: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.5s ease-out;
+}
+
+.slidart .sliderart {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -276px;
+  animation: slideshow 120s linear infinite;
+}
+.slidart:hover .sliderart {
+  opacity: 1;
+}
+
+@keyframes slidart {
+  100% { 
+    -webkit-transform: translateX(-66.6666%);  
+  }
+}
 
 
 .stereo{
